@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- Favicon -->
+
+   <title>Jamel AGRICOLE - Porfolio</title>
+</head>
+
+<body>
+   <header>
+      <a href="index.html">
+         <h1 class="logo">JA.</h1>
+      </a>
+      <nav>
+         <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#project">Mes projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <div class="container">
+         <section id="home" class="home">
+            <div class="home__left-side">
+               <h2 class="home__title">
+                  Je suis Jamel Agricole,
+                  un developper web
+               </h2>
+               <p class="home__description">
+                  Passionné par le développement web et le web design
+                  <!-- Lorem ipsum dolor sit amet consectetur
+                  elit nullam neque tempor id non praesent nec mauris. -->
+               </p>
+               <div class="home__buttons">
+                  <a href="#contact" class="home__btn contact-btn">Contactez moi</a>
+                  <a href="projets.html" class="home__btn project-btn">Voir mes projets</a>
+               </div>
+            </div>
+
+            <div class="home__right-side">
+               <figure>
+                  <img class="right-img" src="assets/images/illustration.svg" alt="illustration">
+               </figure>
+            </div>
+         </section>
+
+
+      </div>
+      <section id="about" class="about">
+         <h2 class="about__title">À propos de moi</h2>
+         <div class="about__content">
+            <div class="about__left-side">
+               <p class="left-side__title">Je suis <span class="blue-text">Jamel</span></p>
+               <p class="about__description">
+                  Lorem ipsum dolor sit amet consectetur. Blandit in risus diam diam sed. Vivamus mi suscipit est
+                  lectus
+                  enim vestibulum pretium blandit. Ullamcorper scelerisque dolor nibh quis sit suspendisse aliquam
+                  amet.
+                  Placerat nisl bibendum non vivamus pharetra turpis.
+               </p>
+               <a class="about-btn" href="#">Télécharger mon CV</a>
+            </div>
+            <div class="about__right-side">
+               <p class="right-side__title">Mes <span class="blue-text">compétences</span></p>
+               <div class="skills">
+                  <p class="skill">HTML</p>
+                  <p class="skill">CSS</p>
+                  <p class="skill">JavaScript</p>
+                  <p class="skill">Git</p>
+                  <p class="skill">Github</p>
+                  <p class="skill">Responsive</p>
+                  <p class="skill">SEO</p>
+                  <p class="skill">Figma</p>
+                  <p class="skill">PHP</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="project" class="project">
+         <h2 class="project__title">Mes projets</h2>
+         <div class="project__container">
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src=" assets/images/projet-1.jpg" alt="Projet 1">
+               </a>
+            </figure>
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src="assets/images/projet-2.jpg" alt="Projet 2">
+               </a>
+            </figure>
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src="assets/images/projet-3.jpg" alt="Projet 3">
+               </a>
+            </figure>
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src="assets/images/projet-4.jpg" alt="Projet 4">
+               </a>
+            </figure>
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src="assets/images/projet-5.jpg" alt="Projet 5">
+               </a>
+            </figure>
+            <figure class="project__img-box">
+               <a href="projets.html" target="_blank">
+                  <img src="assets/images/projet-6.jpg" alt="Projet 6">
+               </a>
+            </figure>
+         </div>
+
+      </section>
+
+      <section id="contact" class="contact">
+         <h2 class="contact__title">Envoyez moi un message</h2>
+         <form action="contact.php" method="post">
+            <div class="form__names">
+               <div class="firtname__field">
+                  <label for="firstname">Prénom</label>
+                  <input type="text" name="firstname" id="firstname" placeholder="Votre prénom" required>
+               </div>
+               <div class="lastname__field">
+                  <label for="lastname">Nom</label>
+                  <input type="text" name="lastname" id="lasttname" placeholder="Votre nom" required>
+               </div>
+            </div>
+            <div class="form__email">
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="form__message">
+               <label for="message">Message</label>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Écrivez votre message..."
+                  required></textarea>
+            </div>
+            <input class="submit-btn" type="submit" value="Envoyer">
+         </form>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <a href="#"><img src=" assets/images/icons/github.svg" alt="Github"></a>
+      <a href="#"><img src="assets/images/icons/linkedin.svg" alt="Linkedin"></a>
+   </footer>
+</body>
+
+</html>

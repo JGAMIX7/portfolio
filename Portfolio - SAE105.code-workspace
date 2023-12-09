@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../language"
+	},
+	{
+		"path": "../../src"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Portfolio - SAE105"
+  }
+}
