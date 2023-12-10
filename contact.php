@@ -15,7 +15,7 @@ if (isset($_POST["contact"])){
     $mail->Username = 'jamel.agricole07@gmail.com';
     $mail->Password = 'txosyygpgsukjkpx';
     $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->Port = 80;
 
     $mail->setFrom('jamel.agricole07@gmail.com');
     

@@ -1,64 +1,96 @@
-/* Page projets */
-.projets {
-   margin-top: 100px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 80vh;
+/* ======== Variables CSS ======== */
+:root {
+   --bright-periwinkle: #7085ff;
+   --white: #FFFFFF;
+   --black: #000000;
+   --black-60: rgba(0, 0, 0, 0.60);
+   --grey: #D7D7D7;
 }
 
-.projet__title {
-   color: var(--white);
-   text-align: center;
-   padding: 40px;
+
+header {
+   position: static;
+}
+
+/* Page projets */
+.projets {
+   width: 100%;
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .projet__container {
+   width: 80%;
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   background-color: #fff;
+   background-color: var(--white);
 }
 
 .projet__left-side,
-.project__right-side {
+.projet__right-side {
    width: 50%;
    height: 500px;
-   overflow: hidden;
-}
-
-.projet__left-side {
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
 .img__container {
-   width: 150px;
-   height: 150px;
-}
-
-.project__img {
+   width: 100%;
+   height: 100%;
    object-fit: cover;
 }
 
-.project__right-side {
-   padding: 2rem 15rem;
+.projet__right-side {
+   padding: 2.5rem 2rem;
    background-color: var(--white);
    display: flex;
    flex-direction: column;
 }
 
-.project__name {
-   font-size: 1.8rem;
+.projet__name {
+   font-size: 3rem;
    color: var(--bright-periwinkle);
-   /* margin-bottom: 2rem; */
+   margin-bottom: 1rem;
 }
 
 .projet__desc {
-   /* line-height: 2%; */
-   font-size: 1.6rem;
+   font-size: 2.2rem;
+   color: var(--black-60);
+   letter-spacing: 0;
+}
+
+.projet__infos {
+   margin: 1.5rem 0 2rem;
+}
+
+.infos__title {
+   font-size: 2rem;
    color: var(--bright-periwinkle);
-   /* margin-bottom: 2rem; */
+   margin-bottom: 1rem;
+}
+
+.projet__tech {
+   margin-bottom: 4rem;
+}
+
+i {
+   color: var(--bright-periwinkle);
+   font-size: 5rem;
+   margin-right: 1.5rem;
+}
+
+.projet__btn {
+   /* display: block; */
+   color: var(--white);
+   font-weight: 700;
+   font-size: 1.5rem;
+   padding: 1.2rem 1.5rem;
+   background-color: var(--bright-periwinkle);
+   border: 3px solid var(--bright-periwinkle);
+   border-radius: 5px;
+   transition: all ease-in 0.2s;
+}
+
+.projet__btn:hover {
+   color: var(--bright-periwinkle);
+   background-color: var(--white);
 }
