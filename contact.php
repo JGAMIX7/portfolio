@@ -8,11 +8,11 @@ require(__DIR__ . "/PHPMailer/src/SMTP.php");
 require(__DIR__ . "/PHPMailer/src/Exception.php");
 
 
-if (isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["email"]) && isset($_POST["message"])) {
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+if (isset($_GET["firstname"]) && isset($_GET["lastname"]) && isset($_GET["email"]) && isset($_GET["message"])) {
+    $firstname = $_GET["firstname"];
+    $lastname = $_GET["lastname"];
+    $email = $_GET["email"];
+    $message = $_GET["message"];
 
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->SMTPDebug = true;
@@ -25,19 +25,18 @@ if (isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["ema
     $mail->Username = 'jamel.agricole07@gmail.com';
     $mail->Password = 'txosyygpgsukjkpx';
 
-    $mail->setFrom($email, $firstname, $lastname);
-    $mail->addAddress('jamel.agricole07@gmail.com');
+    $mail->setFrom('jamel.agricole07@gmail.com', 'Jamel');
+    $mail->addAddress($email, $firstname);
 
     $mail->isHTML(true);
     $mail->Body = $message;
     $mail->CharSet = PHPMailer\PHPMailer\PHPMailer::CHARSET_UTF8;
 
     if ($mail->send() != false) {
-        header("Location : ./email_error");
-        // echo ("Le message électronique a été transmis.\n");
+        header("Location: index.html");
+        echo("Votre message a bien été envoyé !");
     } else {
-        header("Location : ./email_error");
-        // echo ("Le message électronique n'a pas été transmis.\n");
-        // echo ("Mailer Error: " . $mail->ErrorInfo);
+        header("Location: index.html");
     }
 }
+?>

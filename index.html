@@ -11,9 +11,10 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
-
    <!-- CSS -->
    <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- Remixicon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.min.css">
    <!-- Favicon -->
 
    <title>Jamel AGRICOLE - Porfolio</title>
@@ -24,6 +25,14 @@
       <a href="index.html">
          <h1 class="logo">JA.</h1>
       </a>
+
+      <div class="menu">
+         <i class="ri-menu-line"></i>
+      </div>
+      <div class="close">
+         <i class="ri-close-fill"></i>
+      </div>
+
       <nav>
          <ul>
             <li><a href="#home">Accueil</a></li>
@@ -133,7 +142,7 @@
 
       <section id="contact" class="contact">
          <h2 class="contact__title">Envoyez moi un message</h2>
-         <form action="contact.php" method="post">
+         <form action="contact.php" method="get">
             <div class="form__names">
                <div class="firtname__field">
                   <label for="firstname">Prénom</label>
@@ -141,7 +150,7 @@
                </div>
                <div class="lastname__field">
                   <label for="lastname">Nom</label>
-                  <input type="text" name="lastname" id="lasttname" placeholder="Votre nom" required>
+                  <input type="text" name="lastname" id="lastname" placeholder="Votre nom" required>
                </div>
             </div>
             <div class="form__email">
@@ -155,13 +164,14 @@
             </div>
             <input class="submit-btn" type="submit" value="Envoyer">
          </form>
+
       </section>
    </main>
 
    <!-- Footer -->
    <footer>
-      <a href="#"><img src=" assets/images/icons/github.svg" alt="Github"></a>
-      <a href="#"><img src="assets/images/icons/linkedin.svg" alt="Linkedin"></a>
+      <a href="https://github.com/JGAMIX7/JGAMIX7"><i class="ri-github-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-box-fill"></i></a>
    </footer>
 </body>
 

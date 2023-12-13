@@ -55,18 +55,30 @@ body {
 /* Header */
 header {
    width: 100%;
-   height: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 2rem 15rem;
    background-color: var(--white);
-   box-shadow: 0px 6px 7px -7px rgba(0, 0, 0, 0.60);
    border-bottom: 1px solid var(--bright-periwinkle);
    position: fixed;
    top: 0;
    left: 0;
    z-index: 1;
+}
+
+.menu i {
+   color: var(--bright-periwinkle);
+   font-size: 3.2rem;
+   cursor: pointer;
+   display: none;
+}
+
+.close {
+   color: var(--bright-periwinkle);
+   font-size: 4rem;
+   cursor: pointer;
+   display: none;
 }
 
 .logo {
@@ -80,6 +92,7 @@ nav ul {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: nowrap;
    gap: 3rem;
 }
 
@@ -105,15 +118,55 @@ nav li a:hover::after {
    width: 100%;
 }
 
-/* main {
-   padding: 0 15rem;
-} */
+/* Responsive Menu */
+@media screen and (max-width: 412px) {
+   header {
+      padding: 1rem 2rem;
+   }
 
-.container {
-   margin: 0 15rem;
+   .menu i {
+      display: block;
+   }
+
+   /* .close i {
+      display: block;
+   } */
+
+   nav {
+      position: absolute;
+      top: 57px;
+      left: 0;
+      width: 100%;
+      display: none;
+   }
+
+   nav ul {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      background-color: var(--white);
+   }
+
+   /* Home Page */
+   .container {
+      padding: 0 5rem;
+   }
+
+   .home__description {
+      padding-right: 35rem;
+   }
+
+   .home__title {
+      padding-right: 35%;
+   }
 }
 
+
 /* Home Section */
+.container {
+   padding: 0 15rem;
+}
+
 .home {
    width: 100%;
    height: 80vh;
@@ -185,6 +238,17 @@ figure {
    height: 345px;
 }
 
+/* Responsive Header */
+@media screen and (max-width: 1365px) {
+   .home__description {
+      padding-right: 35rem;
+   }
+
+   .home__title {
+      padding-right: 35%;
+   }
+}
+
 /* About section */
 .about {
    width: 100%;
@@ -193,6 +257,7 @@ figure {
    width: 100%;
    display: flex;
    flex-direction: column;
+   /* flex-wrap: wrap; */
    padding-bottom: 10px;
 }
 
@@ -268,11 +333,9 @@ figure {
    align-items: center;
 }
 
-
-
 .project__title {
    color: #fff;
-   margin: 40px 0;
+   margin: 40px 0px;
 }
 
 .project__container {
@@ -283,11 +346,12 @@ figure {
    flex-wrap: wrap;
    gap: 20px;
    margin-bottom: 40px;
+   padding: 0 5%;
 }
 
 .project__img-box {
-   height: 450px;
-   width: 450px;
+   height: 420px;
+   width: 420px;
 }
 
 figure img {
@@ -408,4 +472,9 @@ footer {
    gap: 50px;
    padding: 30px 0;
    background-color: var(--bright-periwinkle);
+}
+
+i {
+   font-size: 5rem;
+   color: var(--white);
 }
