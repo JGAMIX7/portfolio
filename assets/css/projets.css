@@ -1,6 +1,6 @@
 /* ======== Variables CSS ======== */
 :root {
-   --bright-periwinkle: #7085ff;
+   --persian-blue: #4D2fc3;
    --white: #FFFFFF;
    --black: #000000;
    --black-60: rgba(0, 0, 0, 0.60);
@@ -48,7 +48,7 @@ header {
 
 .projet__name {
    font-size: 3rem;
-   color: var(--bright-periwinkle);
+   color: var(--persian-blue);
    margin-bottom: 1rem;
 }
 
@@ -64,7 +64,7 @@ header {
 
 .infos__title {
    font-size: 2rem;
-   color: var(--bright-periwinkle);
+   color: var(--persian-blue);
    margin-bottom: 1rem;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 i {
-   color: var(--bright-periwinkle);
+   color: var(--persian-blue);
    font-size: 5rem;
    margin-right: 1.5rem;
 }
@@ -84,13 +84,13 @@ i {
    font-weight: 700;
    font-size: 1.5rem;
    padding: 1.2rem 1.5rem;
-   background-color: var(--bright-periwinkle);
-   border: 3px solid var(--bright-periwinkle);
+   background-color: var(--persian-blue);
+   border: 3px solid var(--persian-blue);
    border-radius: 5px;
    transition: all ease-in 0.2s;
 }
 
 .projet__btn:hover {
-   color: var(--bright-periwinkle);
+   color: var(--persian-blue);
    background-color: var(--white);
 }

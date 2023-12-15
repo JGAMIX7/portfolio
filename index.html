@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">--bright-periwinkl
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Je suis Jamel Agricole, un étudiant en première année à l'IUT de Laval.">
 
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 
 <body>
    <header>
-      <a href="index.html">
+      <a aria-label="JA." href="index.html">
          <h1 class="logo">JA.</h1>
       </a>
 
@@ -35,10 +36,10 @@
 
       <nav>
          <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#project">Mes projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" aria-label="Accueil">Accueil</a></li>
+            <li><a href="#about" aria-label="À propos">À propos</a></li>
+            <li><a href="#project" aria-label="Mes projets">Mes projets</a></li>
+            <li><a href="#contact" aria-label="Contact">Contact</a></li>
          </ul>
       </nav>
    </header>
@@ -58,8 +59,8 @@
                   elit nullam neque tempor id non praesent nec mauris. -->
                </p>
                <div class="home__buttons">
-                  <a href="#contact" class="home__btn contact-btn">Contactez moi</a>
-                  <a href="#project" class="home__btn project-btn">Voir mes projets</a>
+                  <a href="#contact" class="home__btn contact-btn" aria-label="Contactez moi">Contactez moi</a>
+                  <a href="#project" class="home__btn project-btn" aria-label="Voir mes project">Voir mes projets</a>
                </div>
             </div>
 
@@ -76,28 +77,28 @@
          <h2 class="about__title">À propos de moi</h2>
          <div class="about__content">
             <div class="about__left-side">
-               <p class="left-side__title">Je suis <span class="blue-text">Jamel</span></p>
-               <p class="about__description">
-                  Lorem ipsum dolor sit amet consectetur. Blandit in risus diam diam sed. Vivamus mi suscipit est
-                  lectus
-                  enim vestibulum pretium blandit. Ullamcorper scelerisque dolor nibh quis sit suspendisse aliquam
-                  amet.
-                  Placerat nisl bibendum non vivamus pharetra turpis.
-               </p>
-               <a class="about-btn" href="#">Télécharger mon CV</a>
+               <h2 class="left-side__title">Je suis <span class="blue-text">Jamel</span></2>
+                  <p class="about__description">
+                     Lorem ipsum dolor sit amet consectetur. Blandit in risus diam diam sed. Vivamus mi suscipit est
+                     lectus
+                     enim vestibulum pretium blandit. Ullamcorper scelerisque dolor nibh quis sit suspendisse aliquam
+                     amet.
+                     Placerat nisl bibendum non vivamus pharetra turpis.
+                  </p>
+                  <a class="about-btn" href="#" aria-label="Télécharger mon CV">Télécharger mon CV</a>
             </div>
             <div class="about__right-side">
-               <p class="right-side__title">Mes <span class="blue-text">compétences</span></p>
+               <h2 class="right-side__title">Mes <span class="blue-text">compétences</span></h2>
                <div class="skills">
-                  <p class="skill">HTML</p>
-                  <p class="skill">CSS</p>
-                  <p class="skill">JavaScript</p>
-                  <p class="skill">Git</p>
-                  <p class="skill">Github</p>
-                  <p class="skill">Responsive</p>
-                  <p class="skill">SEO</p>
-                  <p class="skill">Figma</p>
-                  <p class="skill">PHP</p>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">JavaScript</span>
+                  <span class="skill">Git</span>
+                  <span class="skill">Github</span>
+                  <span class="skill">Responsive</span>
+                  <span class="skill">SEO</span>
+                  <span class="skill">Figma</span>
+                  <span class="skill">PHP</span>
                </div>
             </div>
          </div>
@@ -107,32 +108,32 @@
          <h2 class="project__title">Mes projets</h2>
          <div class="project__container">
             <figure class="project__img-box">
-               <a href="projets/projet-1.html">
+               <a href="projets/projet-1.html" aria-label="Projet 1">
                   <img src=" assets/images/projet-1.jpg" alt="Projet 1">
                </a>
             </figure>
             <figure class="project__img-box">
-               <a href="projets/projet-2.html">
+               <a href="projets/projet-2.html" aria-label="Projet 2">
                   <img src="assets/images/projet-2.jpg" alt="Projet 2">
                </a>
             </figure>
-            <figure class="project__img-box">
+            <figure class="project__img-box" aria-label="Projet 3">
                <a href="projets/projet-3.html">
                   <img src="assets/images/projet-3.jpg" alt="Projet 3">
                </a>
             </figure>
-            <figure class="project__img-box">
+            <figure class="project__img-box" aria-label="Projet 4">
                <a href="projets/projet-4.html">
                   <img src="assets/images/projet-4.jpg" alt="Projet 4">
                </a>
             </figure>
-            <figure class="project__img-box">
+            <figure class="project__img-box" aria-label="Projet 4">
                <a href="projets/projet-5.html">
                   <img src="assets/images/projet-5.jpg" alt="Projet 5">
                </a>
             </figure>
             <figure class="project__img-box">
-               <a href="projets/projet-6.html">
+               <a href="projets/projet-6.html" aria-label="Projet 6">
                   <img src="assets/images/projet-6.jpg" alt="Projet 6">
                </a>
             </figure>
@@ -157,6 +158,10 @@
                <label for="email">Email</label>
                <input type="email" name="email" id="email" placeholder="Votre email" required>
             </div>
+            <!-- <div class="form__email">
+               <label for="objet">Objet</label>
+               <input type="text" name="objet" id="email" placeholder="Objet">
+            </div> -->
             <div class="form__message">
                <label for="message">Message</label>
                <textarea name="message" id="message" cols="30" rows="10" placeholder="Écrivez votre message..."
@@ -170,8 +175,8 @@
 
    <!-- Footer -->
    <footer>
-      <a href="https://github.com/JGAMIX7/JGAMIX7"><i class="ri-github-fill"></i></a>
-      <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+      <a href="https://github.com/JGAMIX7/JGAMIX7" aria-label="Github"><i class="ri-github-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-box-fill" aria-label="LinkedIn"></i></a>
    </footer>
 </body>
 
