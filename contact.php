@@ -26,17 +26,16 @@ if (isset($_GET["firstname"]) && isset($_GET["lastname"]) && isset($_GET["email"
     $mail->Password = 'txosyygpgsukjkpx';
 
     $mail->setFrom('jamel.agricole07@gmail.com', 'Jamel');
-    $mail->addAddress($email, $firstname);
+    $mail->addAddress('jamel.agricole07@gmail.com', 'Jamel');
 
     $mail->isHTML(true);
-    $mail->Body = $message;
+    $mail->Body =  "<p>" . $email . "<br>" . $message . "</p>";
     $mail->CharSet = PHPMailer\PHPMailer\PHPMailer::CHARSET_UTF8;
 
     if ($mail->send() != false) {
         header("Location: index.html");
-        echo("Votre message a bien été envoyé !");
+        echo ("Votre message a bien été envoyé !");
     } else {
         header("Location: index.html");
     }
 }
-?>

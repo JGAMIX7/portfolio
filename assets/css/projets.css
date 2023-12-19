@@ -25,6 +25,8 @@ header {
    width: 80%;
    display: flex;
    background-color: var(--white);
+   border-radius: 5px;
+   overflow: hidden;
 }
 
 .projet__left-side,
